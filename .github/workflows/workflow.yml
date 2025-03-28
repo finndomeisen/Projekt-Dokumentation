@@ -1,0 +1,15 @@
+name: Test-Secret
+
+on: [push]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Code auschecken
+        uses: actions/checkout@v4
+
+      - name: Secret anzeigen
+        run: echo "Das Secret ist gesetzt!"
+        env:
+          MY_SECRET: ${{ secrets.API_KEY }}
