@@ -1,4 +1,4 @@
-name: Test-Secret
+name: Database-Secret
 
 on: [push]
 
