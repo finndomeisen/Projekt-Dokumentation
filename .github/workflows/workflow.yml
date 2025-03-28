@@ -12,4 +12,4 @@ jobs:
       - name: Secret anzeigen
         run: echo "Das Secret ist gesetzt!"
         env:
-          MY_SECRET: ${{ secrets.API_KEY }}
+          MY_SECRET: ${{ secrets.DATABASE_PASSWORD }}
